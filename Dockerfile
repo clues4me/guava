@@ -54,7 +54,7 @@ RUN echo $PATH
 
 # Install patched guacamole-server for new debian bookworm
 
-RUN curl -SLO "https://github.com/clues4me/docker-guacamole/raw/master/guacamole-server-1.5.3.tar.gz" \
+RUN curl -SLO "https://github.com/clues4me/guava/raw/master/guacamole-server-1.5.3.tar.gz" \
  && tar -xzf guacamole-server-${GUAC_VER}.tar.gz \
  && cd guacamole-server-${GUAC_VER} \
  && ./configure --enable-allow-freerdp-snapshots \
