@@ -118,8 +118,6 @@ WORKDIR /config
 
 COPY root /
 
-RUN chmod -R +x /run/*
-
 EXPOSE 8080
 
 ENTRYPOINT [ "/init" ]
