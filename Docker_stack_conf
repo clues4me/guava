@@ -1,11 +1,11 @@
 version: "2"
 services:
   guacamole2:
-    image: rspau/guava-pg9:latest
-    container_name: guacamole2
+    image: guava/guava-pg9:latest
+    container_name: guacamole
     volumes:
-      - /home/rspau/mai/guava2/config:/config
+      - <local>/config:/config
 
     ports:
-      - 3344:8080
+      - 80:8080
     restart: always
